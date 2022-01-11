@@ -1,7 +1,7 @@
 import { Card, PageHeader, Row, Col, Tooltip, Button, Spin, Alert } from "antd";
 import Meta from "antd/lib/card/Meta";
 import { useQuery } from "react-query";
-import { Album, fetchAlbums } from "../../queries/albums";
+import { Album, fetchAlbums } from "../../common/queries/albums";
 import useFavorites from "../../common/hooks/useFavorites";
 import { Link } from "react-router-dom";
 import FavoriteButton from "../../common/components/FavoriteButton";

@@ -6,7 +6,7 @@ export default function AlbumAdd() {
     <>
       <PageHeader title="Add album" />
       <Row>
-        <Col span={8}>
+        <Col xs={24} lg={6}>
           <AlbumForm />
         </Col>
       </Row>

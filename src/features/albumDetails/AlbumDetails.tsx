@@ -3,7 +3,7 @@ import { useQuery } from "react-query";
 import { useParams } from "react-router-dom";
 import EditAlbumButton from "../../common/components/EditAlbumButton";
 import FavoriteButton from "../../common/components/FavoriteButton";
-import { Album, fetchAlbums, Photo } from "../../queries/albums";
+import { Album, fetchAlbums, Photo } from "../../common/queries/albums";
 
 export default function AlbumsDetails() {
   const { isLoading, isError, data, error } = useQuery("albums", fetchAlbums);

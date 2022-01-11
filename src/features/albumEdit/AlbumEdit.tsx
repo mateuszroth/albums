@@ -2,7 +2,7 @@ import { Alert, Col, PageHeader, Row, Spin } from "antd";
 import { useQuery } from "react-query";
 import { useParams } from "react-router-dom";
 import AlbumForm from "../../common/components/AlbumForm";
-import { Album, fetchAlbums } from "../../queries/albums";
+import { Album, fetchAlbums } from "../../common/queries/albums";
 
 export default function AlbumEdit() {
   const { isLoading, isError, data, error } = useQuery("albums", fetchAlbums);
@@ -27,7 +27,7 @@ export default function AlbumEdit() {
     <>
       <PageHeader title="Edit album" />
       <Row>
-        <Col span={8}>
+        <Col xs={24} lg={8}>
           <AlbumForm defaultName={album.title} albumId={album.id} />
         </Col>
       </Row>
